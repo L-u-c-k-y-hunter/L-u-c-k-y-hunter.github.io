@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Science</h1>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#home" class="active" onclick="showSection('home')">Home</a></li>
+                <li><a href="#classes" onclick="showSection('classes')">Classes</a></li>
+                <li><a href="#videos" onclick="showSection('videos')">Videos</a></li>
+                <li><a href="#notes" onclick="showSection('notes')">Notes</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <!-- Home Section -->
+            <section id="home" class="section active">
+                <h2>Welcome to Science</h2>
+                <p>Explore classes, videos, and notes related to science. Get started by choosing a section from the sidebar!</p>
+            </section>
+
+            <!-- Classes Section -->
+            <section id="classes" class="section hidden">
+                <h2>Live Classes</h2>
+                <p>Join our live science sessions on Zoom.</p>
+                <a href="https://zoom.us/j/yourzoomlink" target="_blank" class="zoom-btn">Join Zoom Class</a>
+            </section>
+
+            <!-- Videos Section -->
+            <section id="videos" class="section hidden">
+                <h2>Class Videos</h2>
+                <div class="video-container">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+                        <p>Class 1: Physics Overview</p>
+                    </div>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+                        <p>Class 2: Chemistry Concepts</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Notes Section -->
+            <section id="notes" class="section hidden">
+                <h2>Class Notes</h2>
+                <ul>
+                    <li><a href="notes/class1.pdf" download>Physics Class Notes</a></li>
+                    <li><a href="notes/class2.pdf" download>Chemistry Class Notes</a></li>
+                </ul>
+            </section>
+
+            <!-- Contact Us Section -->
+            <section id="contact" class="section hidden">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Science</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

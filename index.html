@@ -1,19 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Tuition Class</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tuition Classes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Tuition Class</h1>
+        <h1>My Tuition Classes</h1>
     </header>
-    <section>
-        <h2>About Us</h2>
-        <p>Learn more about our classes and offerings.</p>
+
+    <section id="videos">
+        <h2>Class Videos</h2>
+        <div class="video-container">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+                <p>Class 1: Topic Overview</p>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+                <p>Class 2: Advanced Concepts</p>
+            </div>
+        </div>
     </section>
+
+    <section id="live-class">
+        <h2>Live Classes</h2>
+        <p>Join our live sessions on Zoom.</p>
+        <a href="https://zoom.us/j/yourzoomlink" target="_blank" class="zoom-btn">Join Zoom Class</a>
+    </section>
+
+    <section id="notes">
+        <h2>Class Notes</h2>
+        <ul>
+            <li><a href="notes/class1.pdf" download>Class 1 Notes</a></li>
+            <li><a href="notes/class2.pdf" download>Class 2 Notes</a></li>
+        </ul>
+    </section>
+
     <footer>
-        <p>Contact: myemail@example.com</p>
+        <p>Contact: info@mytuitionclass.com</p>
     </footer>
 </body>
 </html>
